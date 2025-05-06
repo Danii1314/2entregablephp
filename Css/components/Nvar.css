@@ -1,0 +1,48 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo img {
+  height: 70px;
+  padding-left: 0%;
+  padding-right: 35px;
+}
+
+
+nav ul {
+  display: inline-flex; /* Usa inline-flex para que las opciones estén en una fila */
+  list-style: none;
+  gap:50px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+nav ul li {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+nav ul li a:hover {
+  color: #c2c7dd;
+}

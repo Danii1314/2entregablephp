@@ -1,0 +1,63 @@
+/* Reset y básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2b37, #3a4d5f);
+  min-height: 100vh;
+}
+
+
+
+
+
+.formulario-contenedor {
+  background: rgba(109, 11, 11, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(176, 12, 12, 0.2);
+  max-width: 400px;
+  width: 100%;
+  color: rgb(79, 2, 2);
+}
+
+.formulario-contenedor h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-contenedor label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario-contenedor input,
+.formulario-contenedor select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #1832a6;
+}
+
+.formulario-contenedor button {
+  width: 100%;
+  padding: 12px;
+  background-color: #123484;
+  color: rgb(204, 43, 43);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-contenedor button:hover {
+  background-color: #13296e;
+}
