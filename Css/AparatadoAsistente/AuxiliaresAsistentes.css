@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('../Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra {
+  background: linear-gradient(to right, #8B0000, orange); /* Degradado rojo-naranja */
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+.contenedor {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 90%;
+  margin-top: 100px;
+}
+
+.tabla-auxiliares h2 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.tabla-auxiliares table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabla-auxiliares th,
+.tabla-auxiliares td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #888;
+  color: white;
+}
+
+.tabla-auxiliares th {
+  background-color: coral;
+  color: white;
+}
+
+.tabla-auxiliares button {
+  margin-top: 25px;
+  padding: 12px 40px;
+  background-color: #aaa;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabla-auxiliares button:hover {
+  background-color: #888;
+}

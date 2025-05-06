@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingreso por Fletes</title>
+  <link rel="stylesheet" href="../../Css/AparatadoAsistente/FletesAsistentes.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <section class="tabla-fletes">
+      <h2>Ingreso por Fletes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID Fletes</th>
+            <th>Nombre Cliente</th>
+            <th>Destino de Carga</th>
+            <th>Origen de Carga</th>
+            <th>Peso Estimado</th>
+            <th>Placa Camión</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>2</td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>3</td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+     
+  </div>
+
+</body>
+</html>

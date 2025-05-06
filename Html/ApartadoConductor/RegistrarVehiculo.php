@@ -1,4 +1,4 @@
-<!-- registrar_vehiculos.php -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,10 +8,10 @@
 </head>
 <body>
 
-  <!-- Barra de navegación (Nvar) -->
+ 
     <?php include '../Components/Nvar.html'; ?>
  
-  <!-- Contenido principal -->
+
   <div class="contenido">
     <div class="formulario-contenedor">
       <h2>Registrar un vehículo</h2>
