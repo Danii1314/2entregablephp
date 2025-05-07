@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Vehículos</title>
-  <link rel="stylesheet" href="../../Css/ApartadoConductor/Inicio.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoGerente/Inicio.css">
 </head>
 <body>
 
