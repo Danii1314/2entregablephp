@@ -1,0 +1,46 @@
+/* Estilos para la página del Asistente */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/Visualestudio/2entregablephp/assets/Images/fondoAsistente.png") no-repeat center center/cover;
+    position: relative;
+  }
+  
+  /* Capa de oscurecimiento */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+  }
+  
+  /* Título */
+  .container h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  

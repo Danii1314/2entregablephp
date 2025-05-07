@@ -1,0 +1,26 @@
+/phpAplicacionWeb/
+│
+├── /assets/
+│   ├── /css/
+│   ├── /php/
+│   └──/images/
+
+├── /data/                   # Reemplaza a /includes/
+│   ├── database.php         # Configuración de la DB (antes config.php)
+│   ├── auth.php             # Funciones de autenticación *****
+│   └── helpers.php          # Funciones útiles (antes functions.php) ******
+│
+├── /templates/              # Vistas/plantillas
+│   ├── header.php     # ******
+│   ├── footer.php     
+│   ├── navigation.php    
+│   └── /components/           # Componentes reutilizables
+│
+├── /app/                    # Lógica de la aplicación (conectada a la bd) backend fronent
+│   ├── controllers/
+│   ├── models/
+│   └── services/
+│
+└── /public/                 # Punto de entrada público
+    ├── index.php
+  

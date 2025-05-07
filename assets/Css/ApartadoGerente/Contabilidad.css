@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("../../Images/mantenimientosCorrectivos.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .green h2 { color: #00bfff; }
+  .orange h2 { color: #00bfff; }
+  .blue h2 { color: #00bfff; }
+
+  .card p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 6px 0;
+  }
+
+  .card span {
+    font-weight: bold;
+    color: #00bfff;
+  }
+
+  #actualizarBtn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #actualizarBtn:hover {
+    background-color: #00bfff96;
+  }
+  
