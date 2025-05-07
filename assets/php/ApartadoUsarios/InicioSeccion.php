@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso Estudiante</title>
-    <link rel="stylesheet" href="InicioSeccion.css">
-    <link rel="stylesheet" href="../../Css/ApartadoUsuario/IniccioSeccion.css">
+    
+    <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoUsuario/IniccioSeccion.css">
 </head>
 <body>
 <div class="card">

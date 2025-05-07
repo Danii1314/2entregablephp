@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Personal</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoGerente/Inscripcion.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoGerente/Inscripcion.css">
   <script>
     function mostrarCampos() {
       const tipo = document.getElementById("tipo_registro").value;
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <?php include '../Components/NvarGerente.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/NvarGerente.php"; ?>
 
   <div class="form-wrapper">
     <form class="form" action="procesar_registro.php" method="POST">

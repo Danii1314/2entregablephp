@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro de Vehículo</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoGerente/inscripicionVehiculo.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoGerente/inscripicionVehiculo.css">
 </head>
 <body>
 
-<?php include '../Components/NvarGerente.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/NvarGerente.php"; ?>
 
   <div class="form-wrapper">
     <form class="form" action="procesar_vehiculo.php" method="POST">

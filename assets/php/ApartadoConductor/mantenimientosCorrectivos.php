@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Vehículos</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoConductor/MantenimientoCorrectivo.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoConductor/MantenimientoCorrectivo.css">
 </head>
 <body>
 
-  <?php include '../Components/Nvar.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/Nvar.php'; ?>
   
   <div class="form-wrapper">
     <form class="form" action="procesar_mantenimiento.php" method="POST">

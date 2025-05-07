@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Vehículos</title>
-  <link rel="stylesheet" href="../../Css/ApartadoConductor/Inicio.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoConductor/Inicio.css">
 </head>
 <body>
 
-  <?php include '../Components/Nvar.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/Nvar.php'; ?>
 
   <!-- Contenedor principal -->
   <div class="table-container">

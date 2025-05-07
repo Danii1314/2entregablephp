@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xpedite Freight</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoUsuario/ApartadoUsuario.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoUsuario/ApartadoUsuario.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="../../Imagenes/image (1).png" alt="Logo Xpedite Freight">
+      <img src="../../Images/image (1).png" alt="Logo Xpedite Freight">
     </div>
     <nav>
       <ul>
@@ -29,7 +29,7 @@
 
   <!-- BANNER PRINCIPAL -->
   <section class="banner">
-    <img src="/Visualestudio/2entregablephp/Imagenes/Usuario.avif" alt="Camión" class="fondo">
+    <img src="/Visualestudio/2entregablephp/assets/Images/Usuario.avif" alt="Camión" class="fondo">
   
     <div class="contenedor-banner">
       <h1 class="titulo">Xpedite Freight</h1>

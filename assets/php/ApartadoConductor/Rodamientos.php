@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Rodamiento</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoConductor/rodamientos.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoConductor/rodamientos.css">
 </head>
 <body>
 
-  <?php include '../Components/Nvar.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/Nvar.php'; ?>
   
   <div class="form-wrapper">
     <form class="form" action="procesar_rodamiento.php" method="POST">
