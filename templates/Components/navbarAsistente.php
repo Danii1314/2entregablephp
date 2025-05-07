@@ -15,7 +15,7 @@
   <nav>
     <ul>
       <li><a href="/inicio.php">Inicio</a></li>
-      <li><a href="/registerVehicle.php">Registrar vehículos</a></li>
+      <li><a href="/Visualestudio/2entregablephp/templates/Components/php/inscripcionVehicular.php">Registrar vehículos</a></li>
       <li><a href="/preventiveMaintenance.php">Mantenimientos<br>preventivos</a></li>
       <li><a href="/freightRecord.php">Registro fletes</a></li>
       <li><a href="/assignFreight.php">Asignación de fletes</a></li>

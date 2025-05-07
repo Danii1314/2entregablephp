@@ -25,25 +25,6 @@ header('Content-Type: text/html; charset=UTF-8');
   <!-- 2) Contenedor principal (se desplazará debajo de la navbar fija) -->
   <div class="container">
     <h1>Asistente<br>De<br>Xpedite Freight</h1>
-    <div class="buttons">
-      <?php
-        $telefono      = '0300010502';
-        $telefonoLabel = '030 001 05 02';
-        $email         = 'info@xpeditefreight.com';
-
-        printf(
-          '<a href="tel:%s">LLÁMANOS<small>%s</small></a>',
-          htmlspecialchars($telefono),
-          htmlspecialchars($telefonoLabel)
-        );
-
-        printf(
-          '<a href="mailto:%s">INICIAL ONLINE<small>%s</small></a>',
-          htmlspecialchars($email),
-          htmlspecialchars($email)
-        );
-      ?>
-    </div>
   </div>
 
 </body>

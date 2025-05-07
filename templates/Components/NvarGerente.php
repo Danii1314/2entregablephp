@@ -15,7 +15,7 @@
       <ul>
         <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoGerente/Inicio.php">Inicio</a></li>
         <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoGerente/Inscripcion.php">Inscripcion<br> De Empleados</a></li>
-        <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoGerente/InscripcionVehiculo.php">Registrar <br>Vehiculos</a></li>
+        <li><a href="/Visualestudio/2entregablephp/templates/Components/php/inscripcionVehicular.php">Registrar <br>Vehiculos</a></li>
         <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoGerente/Contabilidad.php">Contabilidad</a></li>
         <li>
           <a href="/Visualestudio/2entregablephp/Html/ApartadoUsarios/ApartadoUsuario.php">

@@ -3,16 +3,15 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  /* 3) Añadimos espacio arriba para la navbar fija (ajusta 80px si tu header mide distinto) */
   padding-top: 80px;
 }
 
 header {
-  position: fixed;       /* fija al top */
+  position: fixed;      
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;          /* ajusta a la altura real de tu header */
+  height: 80px;          
   display: flex;
   align-items: center;
   background-color: #000;
@@ -34,13 +33,14 @@ header .logo img {
 nav ul {
   display: inline-flex;
   list-style: none;
-  gap: 5rem;
+  gap: 4rem;
   align-items: center;
   flex-wrap: nowrap;
 }
 
 nav ul li {
   white-space: nowrap;
+  position: relative; 
 }
 
 nav ul li a {
@@ -48,7 +48,26 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  transition: color .2s ease;
+  transition: color .4s ease;
+  position: relative; 
+}
+
+nav ul li a::before {
+  content: ''; 
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: #fff;
+  transform: scaleX(0); 
+  transform-origin: right;
+  transition: transform 0.5s ease-out;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1); 
+  transform-origin: left; 
 }
 
 nav ul li a:hover {
