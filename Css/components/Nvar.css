@@ -29,7 +29,7 @@ header {
 nav ul {
   display: inline-flex;
   list-style: none;
-  gap:50px; 
+  gap:210px; 
 }
 
 nav ul li a {

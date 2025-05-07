@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Vehículos</title>
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/Css/ApartadoConductor/MantenimientoCorrectivo.css">
+</head>
+<body>
+
+  <?php include '../Components/Nvar.php'; ?>
+  
+  <div class="form-wrapper">
+    <form class="form" action="procesar_mantenimiento.php" method="POST">
+      <p class="title">Registrar</p>
+      <p class="message">Ingresa los datos para registrar el mantenimiento.</p>
+
+      <label for="placa">Placa del vehículo</label>
+      <input required placeholder="" type="text" name="placa" id="placa" class="input">
+
+      <label for="tipo">Tipo de mantenimiento</label>
+      <select required name="tipo" id="tipo" class="input">
+        <option value="">Selecciona tipo</option>
+        <option value="motor">Motor</option>
+        <option value="frenos">Frenos</option>
+        <option value="transmisión">Transmisión</option>
+      </select>
+
+      <label for="costo">Costo del mantenimiento</label>
+      <input required placeholder="" type="number" step="0.01" name="costo" id="costo" class="input">
+
+      <button class="submit">Registrar</button>
+    </form>
+  </div>
+
+</body>
+</html>

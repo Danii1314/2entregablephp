@@ -9,7 +9,7 @@
 <body>
 
  
-    <?php include '../Components/Nvar.html'; ?>
+    <?php include '../Components/Nvar.php'; ?>
  
 
   <div class="contenido">

@@ -1,0 +1,71 @@
+body {
+    background-image: url("../../Imagenes/ImagenApartadoConductor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-container {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    background-color: #f9f9f9;
+    border-left: 5px solid #e67e22;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.info-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.info-list li strong {
+    display: block;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.info-list li:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
