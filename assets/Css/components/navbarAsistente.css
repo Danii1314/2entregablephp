@@ -1,0 +1,61 @@
+/* navbarAsistente.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  /* 3) Añadimos espacio arriba para la navbar fija (ajusta 80px si tu header mide distinto) */
+  padding-top: 80px;
+}
+
+header {
+  position: fixed;       /* fija al top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;          /* ajusta a la altura real de tu header */
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+  z-index: 999;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Logo */
+header .logo img {
+  height: 70px;
+  padding-right: 35px;
+}
+
+/* Navegación */
+nav ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  white-space: nowrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color .2s ease;
+}
+
+nav ul li a:hover {
+  color: #c2c7dd;
+}
+
+nav ul li.logout img {
+  height: 35px;
+  padding: 0 1rem 0 0;
+}
