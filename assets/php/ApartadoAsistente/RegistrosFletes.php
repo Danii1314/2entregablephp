@@ -11,29 +11,34 @@
     include __DIR__ . '/../../../templates/components/navbarAsistente.php';
   ?>
 
-<div class="form-container">
-    <h1><span class="dot"></span> Registro de Fletes</h1>
-    <p class="subtitulo">Complete los campos para registrar un flete</p>
+<div class="form-wrapper">
+  <form class="form" method="POST" action="procesar_flete.php">
+    <h2 class="title">Registro de fletes</h2>
 
-    <form action="procesar_flete.php" method="POST">
-        <label for="idFlete">ID Flete</label>
-        <input type="text" name="idFlete" id="idFlete" placeholder="Ej: F12345" required>
+    <label>ID flete
+      <input type="text" name="id_flete" class="input" required>
+    </label>
 
-        <label for="origen">Origen de la ruta</label>
-        <input type="text" name="origen" id="origen" placeholder="Ej: Bogotá" required>
+    <label>Origen de la ruta
+      <input type="text" name="origen" class="input" required>
+    </label>
 
-        <label for="destino">Destino de la ruta</label>
-        <input type="text" name="destino" id="destino" placeholder="Ej: Medellín" required>
+    <label>Destino de la ruta
+      <input type="text" name="destino" class="input" required>
+    </label>
 
-        <label for="cliente">Cliente</label>
-        <input type="text" name="cliente" id="cliente" placeholder="Ej: Juan Pérez" required>
+    <label>Cliente
+      <input type="text" name="cliente" class="input" required>
+    </label>
 
-        <label for="valorFlete">Valor de flete</label>
-        <input type="number" name="valorFlete" id="valorFlete" placeholder="Ej: 250000" required>
+    <label>Valor de flete
+      <input type="number" name="valor" class="input" required>
+    </label>
 
-        <button type="submit">Registrar Flete</button>
-    </form>
+    <button type="submit" class="submit">Registrar Flete</button>
+  </form>
 </div>
+
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 /* Fondo general de la página */
 body {
-  background-image:url("/Visualestudio/2entregablephp/assets/Images/InicioSeccionOficial.png"); /* Fondo general distinto (#0a0a0a es un negro azulado profundo) */
+  background-image:url("/Visualestudio/2entregablephp/assets/Images/InicioSeccionOficial.png");
   background-repeat: no-repeat;
-  background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
-  background-position: center;   /* Centra la imagen */
+  background-size: cover;        
+  background-position: center;   
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ body {
   
 }
 
-/* Contenedor principal del formulario (recuadro pequeño centrado) */
+/* Contenedor principal del formulario  */
 .form {
   display: flex;
   flex-direction: column;

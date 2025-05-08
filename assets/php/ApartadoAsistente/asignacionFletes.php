@@ -10,19 +10,20 @@
 <?php
     include __DIR__ . '/../../../templates/components/navbarAsistente.php';
   ?>
-<div class="form-container">
-    <h1><span class="dot"></span> Asignación de Fletes</h1>
-    <p class="subtitulo">Complete los campos para asignar un flete a un vehículo</p>
+<div class="form-wrapper">
+  <form class="form" method="POST" action="procesar_asignacion.php">
+    <h2 class="title">Asignación de fletes</h2>
 
-    <form action="procesar_asignacion.php" method="POST">
-        <label for="fleteAsignar">Flete por asignar</label>
-        <input type="text" name="fleteAsignar" id="fleteAsignar" placeholder="Ej: F12345" required>
+    <label>Flete por asignar
+      <input type="text" name="flete" class="input" required>
+    </label>
 
-        <label for="placaVehiculo">Placa del vehículo</label>
-        <input type="text" name="placaVehiculo" id="placaVehiculo" placeholder="Ej: ABC123" required>
+    <label>Placa del vehículo
+      <input type="text" name="placa_asignar" class="input" required>
+    </label>
 
-        <button type="submit">Asignar Flete</button>
-    </form>
+    <button type="submit" class="submit">Asignar Flete</button>
+  </form>
 </div>
 
 </body>

@@ -22,7 +22,7 @@
     </nav>
     <div class="productos">
       <span>Productos Enviados</span>
-    <!-- <img src="/Imagenes/" alt="Bolsa"> -->
+ 
       <span class="contador">0</span>
     </div>
   </header>
@@ -52,16 +52,19 @@
         <strong>LLÁMANOS</strong><br>
         +52-1-33-12345678
       </div>
-      <div>
-        <strong>INICIA ONLINE</strong><br>
-        Te cotizamos en segundos
-      </div>
+      <div class="inicia-online">
+  <strong>
+    <a href="/Visualestudio/2entregablephp/assets/php/ApartadoUsarios/InicioSeccion.php">
+      INICIA ONLINE<br>Te cotizamos en segundos
+    </a>
+  </strong><br>
+</div>
     </div>
   </div>
 </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer>|
 
    
     

@@ -30,9 +30,9 @@ body {
     margin-bottom: 15px;
   }
 
-  .green h2 { color: #00bfff; }
-  .orange h2 { color: #00bfff; }
-  .blue h2 { color: #00bfff; }
+  .green h2 { color:#ff4500; }
+  .orange h2 { color: #ff4500; }
+  .blue h2 { color: #ff4500; }
 
   .card p {
     font-size: 15px;
@@ -42,7 +42,7 @@ body {
 
   .card span {
     font-weight: bold;
-    color: #00bfff;
+    color:#ff4500;
   }
 
   #actualizarBtn {
@@ -50,7 +50,7 @@ body {
     margin: 30px auto;
     padding: 12px 30px;
     font-size: 16px;
-    background-color: #00bfff;
+    background-color: #ff4500;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -59,6 +59,6 @@ body {
   }
 
   #actualizarBtn:hover {
-    background-color: #00bfff96;
+    background-color:#ff4500;
   }
   

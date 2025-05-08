@@ -14,25 +14,29 @@
     include __DIR__ . '/../../../templates/components/navbarAsistente.php';
   ?>
 
-<div class="form-container">
-    <h1><span class="dot"></span> Mantenimientos Preventivos</h1>
-    <p class="subtitulo">Complete los campos para registrar un mantenimiento</p>
+<div class="form-wrapper">
+  <form class="form" method="POST" action="procesar_mantenimiento.php">
+    <h2 class="title">Mantenimientos Preventivos</h2>
 
-    <label for="placa">Placa del vehículo</label>
-    <input type="text" id="placa" placeholder="Ej: ABC123">
+    <label>Placa del vehículo
+      <input type="text" name="placa" class="input" required>
+    </label>
 
-    <label for="tipo">Tipo de mantenimiento</label>
-    <select id="tipo">
-        <option value="">Seleccione un tipo</option>
-        <option value="aceite">Cambio de aceite</option>
-        <option value="frenos">Revisión de frenos</option>
-        <option value="llantas">Cambio de llantas</option>
-    </select>
+    <label>Tipo de mantenimiento
+      <select name="tipo" class="input" required>
+        <option value="">Seleccione una opción</option>
+        <option value="cambio_aceite">Cambio de aceite</option>
+        <option value="revision_frenos">Revisión de frenos</option>
+        <option value="alineacion">Alineación</option>
+      </select>
+    </label>
 
-    <label for="costo">Costo del mantenimiento</label>
-    <input type="number" id="costo" placeholder="Ej: 150000">
+    <label>Costo del mantenimiento
+      <input type="number" name="costo" class="input" required>
+    </label>
 
-    <button>Registrar Mantenimiento</button>
+    <button type="submit" class="submit">Registrar Mantenimiento</button>
+  </form>
 </div>
 
 </body>

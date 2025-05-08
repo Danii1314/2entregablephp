@@ -20,7 +20,7 @@ body {
   margin: auto;
 }
 
-/* Título del formulario con punto animado a la izquierda */
+/* Título del formulario */
 .title {
   font-size: 28px;
   font-weight: 600;
@@ -101,6 +101,6 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* Ajusta si tu navbar tiene otro alto */
+  min-height: calc(100vh - 60px); 
   padding-top: 20px;
 }

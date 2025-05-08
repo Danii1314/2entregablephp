@@ -1,73 +1,114 @@
+/* Estilos generales del formulario */
 body {
-    background-image: url("/Visualestudio/2entregablephp/assets/Images/mantenimientosCorrectivos.jpg");
+    background-image: url("../../Images/mantenimientosCorrectivos.jpg");
+    background-size: cover;
+    background-position: center;
     font-family: Arial, sans-serif;
     color: #fff;
     margin: 0;
     padding: 0;
+    height: 100vh;
   }
   
-  .form-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 400px;
-    padding: 30px;
-    border-radius: 15px;
-    margin: 100px auto;
-    box-shadow: 0 0 10px #000;
-}
-
-.form-container h1 {
+  /* Contenedor que centra el formulario */
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding-top: 60px; 
+    box-sizing: border-box;
+  }
+  
+  /* Formulario */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(26, 26, 26, 0.9); 
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  /* Título del formulario con punto animado */
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
     color: #ff4500;
     margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.form-container .subtitulo {
-    color: #ccc;
-    margin-bottom: 20px;
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff4500;
+    animation: pulse 1.2s infinite ease-out;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  /* Mensaje debajo del título */
+  .message {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+  }
+  
+  /* Etiquetas y campos de entrada */
+  .form label {
     font-size: 14px;
-}
-
-.form-container label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.form-container input,
-.form-container select {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .input,
+  select {
     background-color: #333;
     color: #fff;
-}
-
-.form-container input::placeholder {
-    color: #aaa;
-}
-
-.form-container button {
     width: 100%;
-    padding: 12px;
-    background-color: #ff4500;
-    color: white;
-    border: none;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(105, 105, 105, 0.4);
     border-radius: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  /* Botón de enviar */
+  .submit {
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
     font-size: 16px;
-    cursor: pointer;
-}
-
-.form-container button:hover {
-    background-color: #e03e00;
-}
-
-.dot {
-    height: 12px;
-    width: 12px;
     background-color: #ff4500;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #e03e00;
+  }
+  
