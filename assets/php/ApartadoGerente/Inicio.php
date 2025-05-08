@@ -9,6 +9,12 @@
 
   <?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/NvarGerente.php"; ?>
 
+  <div class="contenido-central">
+    <h1>Gerente</h1>
+    <h1>De</h1>
+    <h1>Xpedite Freight</h1>
+  </div>
 
 </body>
 </html>
+

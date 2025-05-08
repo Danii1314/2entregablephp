@@ -3,4 +3,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.contenido-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.contenido-central h1 {
+    margin: 10px 0;
+    font-size: 3.5em;
+    font-weight: bold;
 }
