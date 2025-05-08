@@ -1,0 +1,73 @@
+body {
+    background-image: url("/Visualestudio/2entregablephp/assets/Images/mantenimientosCorrectivos.jpg");
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px #000;
+}
+
+.form-container h1 {
+    color: #ff4500;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.form-container .subtitulo {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-container input::placeholder {
+    color: #aaa;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #e03e00;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}

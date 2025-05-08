@@ -39,7 +39,7 @@ header {
   nav ul {
     display: flex; /* Cambiado a flex */
     list-style: none;
-    gap: 6rem;
+    gap: 16rem;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-end; /* Alinea los items hacia la derecha */
