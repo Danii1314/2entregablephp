@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/NvarGerente.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/NvarGerente.php"; ?>
 
   <div class="contenido-central">
     <h1>Gerente</h1>

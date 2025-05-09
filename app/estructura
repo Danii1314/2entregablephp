@@ -11,16 +11,17 @@
 │   └── helpers.php          # Funciones útiles (antes functions.php) ******
 │
 ├── /templates/              # Vistas/plantillas
-│   ├── header.php     # ******
-│   ├── footer.php     
-│   ├── navigation.php    
+│   ├── footer.php      
 │   └── /components/           # Componentes reutilizables
 │
 ├── /app/                    # Lógica de la aplicación (conectada a la bd) backend fronent
 │   ├── controllers/
 │   ├── models/
+|   │   ├── /css/
+|   │   ├── /php/
 │   └── services/
 │
 └── /public/                 # Punto de entrada público
     ├── index.php
+    ├── navigation.php   
   

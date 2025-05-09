@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrar Personal</title>
-  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoGerente/Inscripcion.css">
+  <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoGerente/php/Inscripcion.css">
   <script>
     function mostrarCampos() {
       const tipo = document.getElementById("tipo_registro").value;

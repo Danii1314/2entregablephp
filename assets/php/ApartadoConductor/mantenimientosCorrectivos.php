@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/Nvar.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/php/Nvar.php'; ?>
   
   <div class="form-wrapper">
     <form class="form" action="procesar_mantenimiento.php" method="POST">

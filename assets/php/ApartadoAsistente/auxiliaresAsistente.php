@@ -17,7 +17,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
  
  <?php
-    include __DIR__ . '/../../../templates/components/navbarAsistente.php';
+    include __DIR__ . '/../../../templates/components/php/navbarAsistente.php';
   ?>
 
 <body>

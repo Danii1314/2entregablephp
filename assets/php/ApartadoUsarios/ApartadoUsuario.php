@@ -10,19 +10,18 @@
   <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="../../Images/image (1).png" alt="Logo Xpedite Freight">
+      <img src="/Visualestudio/2entregablephp/assets/Images/image (1).png" alt="Logo Xpedite Freight">
     </div>
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Mis Envíos</a></li>
-        <li><a href="#">Mis Entregas</a></li>
+        <li><a href="?ruta=usuario/inicio">Inicio</a></li>
+        <li><a href="?ruta=usuario/login">Mis Envíos</a></li>
+        <li><a href="?ruta=usuario/login">Mis Entregas</a></li>
         <li><a href="#">Soporte</a></li>
       </ul>
     </nav>
     <div class="productos">
       <span>Productos Enviados</span>
- 
       <span class="contador">0</span>
     </div>
   </header>
@@ -30,44 +29,24 @@
   <!-- BANNER PRINCIPAL -->
   <section class="banner">
     <img src="/Visualestudio/2entregablephp/assets/Images/Usuario.avif" alt="Camión" class="fondo">
-  
-    <div class="contenedor-banner">
-      <h1 class="titulo">Xpedite Freight</h1>
-  
-      <div class="cuadros-info">
-        <div class="cuadro">
-          <strong>LLÁMANOS</strong><br>
-          +52-1-33-12345678
-        </div>
-        <div class="cuadro">
-          <strong>INICIA ONLINE</strong><br>
-          Te cotizamos en segundos
-        </div>
-      </div>
-    </div>
-  </section><div class="info-banner">
-    <h1>Xpedite Freight</h1>
-    <div class="info-contacto">
-      <div>
-        <strong>LLÁMANOS</strong><br>
-        +52-1-33-12345678
-      </div>
-      <div class="inicia-online">
-  <strong>
-    <a href="/Visualestudio/2entregablephp/assets/php/ApartadoUsarios/InicioSeccion.php">
-      INICIA ONLINE<br>Te cotizamos en segundos
-    </a>
-  </strong><br>
-</div>
-    </div>
-  </div>
-</section>
-
-  <!-- FOOTER -->
-  <footer>|
-
-   
     
-  </footer>
+    <!-- Contenedor derecho para título y recuadros -->
+    <div class="contenido-derecho">
+      <h1 class="titulo-derecho">Xpedite Freight</h1>
+      
+      <div class="recuadros-derecha">
+        <div class="info-box">
+          <strong>Te cotizamos en segundos</strong>
+          <a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/login" class="boton-naranja">INICIA ONLINE</a>
+        </div>
+            
+        <div class="info-box">
+          <strong>LLÁMANOS</strong>
+          <p>+52-1-33-12345678</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 </body>
 </html>

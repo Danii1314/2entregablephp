@@ -5,7 +5,7 @@
         <title>Panel de Contabilidad</title>
         <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoGerente/Contabilidad.css">
     </head>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/NvarGerente.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/NvarGerente.php"; ?>
 <div class="dashboard">
   <div class="card green">
     <h2>RESUMEN FINANCIERO GENERAL</h2>
