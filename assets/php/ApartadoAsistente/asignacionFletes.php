@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-    include __DIR__ . '/../../../templates/components/navbarAsistente.php';
+    include __DIR__ . '/../../../templates/components/php/navbarAsistente.php';
   ?>
 <div class="form-wrapper">
   <form class="form" method="POST" action="procesar_asignacion.php">

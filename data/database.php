@@ -1,16 +1,16 @@
 <?php
-// Datos de conexión a la base de datos
-define('DB_HOST', 'localhost');
-define('DB_USER', 'usuario');
-define('DB_PASS', 'contraseña');
-define('DB_NAME', 'nombre_basedatos');
+// Parámetros de conexión
+$servername = "localhost";   // Si estás usando XAMPP en tu máquina local
+$username = "root";          // Usuario por defecto de MySQL en XAMPP
+$password = "";              // La contraseña está vacía por defecto en XAMPP
+$dbname = "xpeditefreightdb";       // El nombre de la base de datos que creaste
 
-// Conexión a MySQL
-try {
-    $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->exec("SET NAMES 'utf8'");
-} catch (PDOException $e) {
-    die("Error de conexión: " . $e->getMessage());
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
 }
+echo "Conexión exitosa";
 ?>
