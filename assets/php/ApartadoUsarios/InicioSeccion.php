@@ -38,7 +38,11 @@
         
 
         <!-- Botón para ir al formulario de registro -->
-        <a href="registro.php"><button type="button" class="button2">Registrarse</button></a>
+       <a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/registro">
+
+              <button type="button" class="button2">Registrarse</button>
+        </a>
+
       </div>
     </form>
   </div>
