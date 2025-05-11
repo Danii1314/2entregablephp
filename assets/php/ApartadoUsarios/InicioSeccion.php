@@ -12,7 +12,7 @@
 <div class="card">
   <div class="card2">
     <!-- Formulario que envía datos a validar_sesion.php -->
-    <form class="form" action="validar_sesion.php" method="POST">
+   <form class="form" action="/Visualestudio/2entregablephp/app/controllers/validar_sesion.php" method="POST">
       <p id="heading">Inicio de Sesión <br><br>Xpedite Freight</p>
       
       <div class="field">
@@ -32,6 +32,7 @@
       <div class="btn">
         <!-- Botón para enviar el formulario -->
         <button type="submit" class="button1">Ingresar</button>
+        
 
         <!-- Botón para ir al formulario de registro -->
         <a href="registro.php"><button type="button" class="button2">Registrarse</button></a>

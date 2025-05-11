@@ -1,0 +1,41 @@
+<?php
+// Incluir la conexión a la base de datos
+include('/../../data/database.php');  // Ajusta la ruta según la ubicación de tu archivo
+
+// Recuperar datos del formulario
+$correo = $_POST['correo'];
+$contrasena = $_POST['contrasena'];
+
+// Consultar la base de datos para verificar si el correo existe y la contraseña coincide
+$sql = "SELECT * FROM usuarios WHERE email = ?";  // Usamos un prepared statement para evitar inyecciones SQL
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('s', $correo);  // 's' indica que es un string
+$stmt->execute();
+$result = $stmt->get_result();
+
+// Verificar si se encontró el usuario
+if ($result->num_rows > 0) {
+    // Obtener los datos del usuario
+    $usuario = $result->fetch_assoc();
+
+    // Verificar si la contraseña es correcta (usamos password_verify si las contraseñas están encriptadas)
+    if (password_verify($contrasena, $usuario['contrasena'])) {
+        // Contraseña correcta, redirigir a otra página (por ejemplo, el panel del usuario)
+        session_start();  // Iniciar la sesión para guardar datos de sesión
+        $_SESSION['usuario_id'] = $usuario['id_usuario'];  // Almacenar el ID de usuario en la sesión
+        $_SESSION['usuario_email'] = $usuario['email'];  // Almacenar el correo en la sesión
+        header('Location: /Visualestudio/2entregablephp/assets/php/ApartadoConductor/Inicio.php');  // Redirigir al panel del usuario (ajusta la URL según tu estructura)
+        exit();  // Asegúrate de agregar exit() después de header() para detener el script
+    } else {
+        // Contraseña incorrecta
+        echo "Contraseña incorrecta. Por favor, intente nuevamente.";
+    }
+} else {
+    // El correo no existe en la base de datos
+    echo "El correo no está registrado. Por favor, verifique sus datos.";
+}
+
+// Cerrar la conexión
+$stmt->close();
+$conn->close();
+?>
