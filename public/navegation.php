@@ -11,6 +11,9 @@ $rutasValidas = [
     'usuario' => [
         'inicio' => __DIR__.'/../assets/php/ApartadoUsarios/ApartadoUsuario.php',
         'login' => __DIR__.'/../assets/php/ApartadoUsarios/InicioSeccion.php',
+        'gerente'=> __DIR__.'/../assets/php/ApartadoGerente/Inicio.php',
+        'conductor'=> __DIR__.'/../assets/php/ApartadoConductor/Inicio.php',
+        'asistente'=> __DIR__.'/../assets/php/ApartadoAsistente/auxiliaresAsitente.php',
     ],
 ];
 

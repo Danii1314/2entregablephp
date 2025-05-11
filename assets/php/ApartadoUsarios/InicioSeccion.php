@@ -1,11 +1,9 @@
-<!-- Adaptado para estudiante de 6º semestre -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso Estudiante</title>
-    
     <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoUsuario/IniccioSeccion.css">
 </head>
 <body>
@@ -14,6 +12,11 @@
     <!-- Formulario que envía datos a validar_sesion.php -->
    <form class="form" action="/Visualestudio/2entregablephp/app/controllers/validar_sesion.php" method="POST">
       <p id="heading">Inicio de Sesión <br><br>Xpedite Freight</p>
+        
+      <?php if (isset($_SESSION['error'])): ?>
+      <div style="color: red;"><?= $_SESSION['error']; ?></div>
+      <?php unset($_SESSION['error']); // Limpiar el mensaje de error después de mostrarlo ?>
+      <?php endif; ?>
       
       <div class="field">
         <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="input-icon">
