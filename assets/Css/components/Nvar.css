@@ -29,7 +29,7 @@ header {
 nav ul {
   display: flex; 
   list-style: none;
-  gap: 210px;
+  gap: 190px;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: flex-end; 
