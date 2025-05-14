@@ -1,0 +1,89 @@
+/* navbarAsistente.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-image: url("/Visualestudio/2entregablephp/assets/Images/mantenimientosCorrectivos.jpg");
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 80px; /* Ajuste del padding superior para que no quede cubierto por la navbar fija */
+  color: #fff;
+}
+
+/* Barra de navegación */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Ajusta a la altura real de tu header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea el logo a la izquierda y la navegación a la derecha */
+    background-color: #000;
+    color: #fff;
+    padding: 0 1rem;
+    z-index: 999;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Logo */
+  header .logo img {
+    height: 70px;
+    padding-right: 55px;
+  }
+  
+  /* Navegación */
+  nav ul {
+    display: flex; /* Cambiado a flex */
+    list-style: none;
+    gap: 10rem;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end; /* Alinea los items hacia la derecha */
+  }
+  
+  nav ul li {
+    white-space: nowrap;
+    position: relative; /* Necesario para colocar la línea */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color .2s ease;
+    position: relative; /* Necesario para la línea */
+  }
+  
+  nav ul li a::before {
+    content: ''; /* Genera la línea */
+    position: absolute;
+    bottom: -5px; /* Ajusta la posición de la línea */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #fff;
+    transform: scaleX(0); /* Empieza invisible */
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  nav ul li a:hover::before {
+    transform: scaleX(1); /* Hace que la línea se expanda de derecha a izquierda */
+    transform-origin: left; /* La animación se inicia desde la izquierda */
+  }
+  
+  nav ul li a:hover {
+    color: #c2c7dd;
+  }
+  
+  nav ul li.logout img {
+    height: 35px;
+    padding: 0 1rem 0 0;
+  }
+  
+

@@ -1,0 +1,138 @@
+/* Fondo general de la página */
+body {
+  background-image:url("/Visualestudio/2entregablephp/assets/Images/InicioSeccionOficial.png");
+  background-repeat: no-repeat;
+  background-size: cover;        
+  background-position: center;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
+/* Contenedor principal del formulario  */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background-color: #171717;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 255, 117, 0.2);
+}
+
+/* Título del formulario */
+#heading {
+  text-align: center;
+  margin-bottom: 1em;
+  color: rgb(0, 255, 200);
+  font-size: 1.5em;
+}
+
+/* Campos de entrada */
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+/* Iconos dentro del campo */
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: rgb(0, 255, 200);
+}
+
+/* Campos input */
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: rgb(0, 255, 200);
+}
+
+/* Contenedor de botones */
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1.5em;
+}
+
+/* Botón 1 */
+.button1 {
+  padding: 0.5em 1.1em;
+  border-radius: 5px;
+  border: none;
+  transition: .4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
+}
+
+/* Botón 2 */
+.button2 {
+  padding: 0.5em 2.3em;
+  border-radius: 5px;
+  border: none;
+  transition: .4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
+}
+
+/* Botón 3 */
+.button3 {
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  border: none;
+  transition: .4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+}
+
+.button3:hover {
+  background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%);
+  color: rgb(255, 255, 255);
+}
+
+/* Efectos de tarjeta */
+.card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 22px;
+  transition: all .3s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all .2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
