@@ -21,7 +21,7 @@
 |   │   ├── /php/
 │   └── services/
 │
-└── /public/                 # Punto de entrada público
+└── /public/                 # Punto de entrada públicos
     ├── index.php
     ├── navigation.php   
   
