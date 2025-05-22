@@ -14,6 +14,7 @@ $rutasValidas = [
         'registroTdCargo' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroTipoDeUsuario.php',
         'registroConductor' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroConductor.php',
         'registroAuxiliar' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroAuxiliar.php',
+        'registroAsistente' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroAsistente.php',
         'registro'=> __DIR__.'/../assets/php/ApartadoUsarios/Registro.php',
         'gerente'=> __DIR__.'/../assets/php/ApartadoGerente/Inicio.php',
         'conductor'=> __DIR__.'/../assets/php/ApartadoConductor/Inicio.php',
