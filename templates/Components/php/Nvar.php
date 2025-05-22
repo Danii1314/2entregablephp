@@ -13,7 +13,7 @@
 
     <nav>
       <ul>
-        <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoConductor/Inicio.php">Inicio</a></li>
+        <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/conductor">Inicio</a></li>
         <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoConductor/mantenimientosCorrectivos.php">Mantenimientos correctivos</a></li>
         <li><a href="rodamientos.php">Rodamientos</a></li>
         <li>
