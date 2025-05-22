@@ -12,6 +12,7 @@
     <!-- Formulario que envía datos a validar_sesion.php -->
    <form class="form" action="/Visualestudio/2entregablephp/app/controllers/validar_sesion.php" method="POST">
       <p id="heading">Inicio de Sesión <br><br>Xpedite Freight</p>
+      
         
       <?php if (isset($_SESSION['error'])): ?>
       <div style="color: red;"><?= $_SESSION['error']; ?></div>

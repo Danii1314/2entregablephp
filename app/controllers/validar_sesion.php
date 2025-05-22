@@ -23,7 +23,8 @@ if (isset($_POST['correo']) && isset($_POST['contrasena'])) {
         $usuario = $result->fetch_assoc();
 
         // Verificar si la contraseña es correcta
-        if ($contrasena == $usuario['contrasena']) {
+       // if ($contrasena == $usuario['contrasena']) {  <- sirve no encriptar la contraseña
+       if (password_verify($contrasena, $usuario['contrasena'])) {
             // Contraseña correcta, redirigir a otro apartado dependiendo del cargo
             $_SESSION['usuario_id'] = $usuario['id_usuario'];  // Almacenar el ID de usuario en la sesión
             $_SESSION['usuario_email'] = $usuario['email'];  // Almacenar el correo en la sesión
