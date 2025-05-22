@@ -47,28 +47,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $id_usuario = $stmt->insert_id;  // Obtiene el id del usuario creado
         $stmt->close();
         $conn->close();
-
-        // Redirigir según cargo para completar datos adicionales
-            switch ($id_cargo) {
-                case 1: // Gerente
-                    header("Location: /Visualestudio/2entregablephp/public/registro-gerente.php?id_usuario=$id_usuario");
-                    break;
-                case 2: // Asistente
-                    header("Location: /Visualestudio/2entregablephp/public/registro-asistente.php?id_usuario=$id_usuario");
-                    break;
-                case 3: // Conductor
-                   header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroConductor&id_usuario=$id_usuario");
-
-                    break;
-                case 4: // Auxiliar
-                    header("Location: /Visualestudio/2entregablephp/public/registro-auxiliar.php?id_usuario=$id_usuario");
-                    break;
-                default:
-                    // Si el cargo no coincide, ir a login o inicio
-                    header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/login");
-                    break;
-            }
+        switch ($id_cargo) {
+            case 1: // Gerente
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroGerente&id_usuario=$id_usuario");
+                break;
+            case 2: // Asistente
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroAsistente&id_usuario=$id_usuario");
+                break;
+            case 3: // Conductor
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroConductor&id_usuario=$id_usuario");
+                break;
+            case 4: // Auxiliar
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroAuxiliar&id_usuario=$id_usuario");
+                break;
+            default:
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/login");
+                break;
+        }
         exit;
+
     } else {
         $_SESSION['error_registro'] = "Error al registrar usuario: " . $stmt->error;
         $stmt->close();

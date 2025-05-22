@@ -13,6 +13,7 @@ $rutasValidas = [
         'login' => __DIR__.'/../assets/php/ApartadoUsarios/InicioSeccion.php',
         'registroTdCargo' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroTipoDeUsuario.php',
         'registroConductor' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroConductor.php',
+        'registroAuxiliar' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroAuxiliar.php',
         'registro'=> __DIR__.'/../assets/php/ApartadoUsarios/Registro.php',
         'gerente'=> __DIR__.'/../assets/php/ApartadoGerente/Inicio.php',
         'conductor'=> __DIR__.'/../assets/php/ApartadoConductor/Inicio.php',

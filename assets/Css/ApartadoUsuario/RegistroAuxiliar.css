@@ -1,0 +1,101 @@
+/* Fondo general de la página */
+body {
+  background-image: url("/Visualestudio/2entregablephp/assets/Images/registroU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;        
+  background-position: center;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background-color: rgba(23, 23, 23, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 255, 117, 0.2);
+}
+
+#heading {
+  text-align: center;
+  margin-bottom: 1em;
+  color: rgb(0, 255, 200);
+  font-size: 1.5em;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  color: rgb(0, 255, 200);
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1.5em;
+}
+
+/* Estilo para el select */
+select.input-field {
+  background-color: rgba(23, 23, 23, 0.9); /* Fondo negro semitransparente */
+  color: rgb(0, 255, 200); /* Texto verde neón */
+  cursor: pointer;
+}
+
+/* Estilo para las opciones del select */
+select.input-field option {
+  background-color: #171717; /* Fondo negro */
+  color: rgb(0, 255, 200); /* Texto verde neón */
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+select.input-field::-webkit-scrollbar {
+  width: 8px;
+}
+select.input-field::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 255, 200);
+  border-radius: 4px;
+}
+
+/* Para Firefox */
+select.input-field {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 255, 200) #171717;
+}
+
+.button1 {
+  padding: 0.5em 1.1em;
+  border-radius: 5px;
+  border: none;
+  transition: .4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+}
+.button1:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
+}
