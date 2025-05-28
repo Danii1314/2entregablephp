@@ -1,7 +1,9 @@
 <?php
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/Visualestudio/2entregablephp/data/database.php');
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $placa = strtoupper(trim($_POST['placa']));
@@ -22,19 +24,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->fetch()) {
         $stmt->close();
 
-        // Insertar el mantenimiento correctivo
-        $stmt = $conn->prepare("INSERT INTO mantenimientos (id_vehiculo, fecha, tipo, costo, Placa_Vehiculo, categoria) VALUES (?, ?, ?, ?, ?, ?)");
+        // Insertar el mantenimiento sin categoria
+        $stmt = $conn->prepare("INSERT INTO mantenimientos (id_vehiculo, fecha, tipo, costo) VALUES (?, ?, ?, ?)");
         if (!$stmt) {
             $_SESSION['error_mantenimiento'] = "Error en la consulta de inserción de mantenimiento: " . $conn->error;
             header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/mantenimientoCorrectivo");
             exit;
         }
 
-        $categoria = 'correctivo';
-        $stmt->bind_param("issdss", $id_vehiculo, $fecha, $tipo, $costo, $placa, $categoria);
+        $stmt->bind_param("issd", $id_vehiculo, $fecha, $tipo, $costo);
 
         if ($stmt->execute()) {
-            $_SESSION['mensaje_mantenimiento'] = "Mantenimiento correctivo registrado correctamente.";
+            $_SESSION['mensaje_mantenimiento'] = "Mantenimiento registrado correctamente.";
         } else {
             $_SESSION['error_mantenimiento'] = "Error al registrar el mantenimiento: " . $stmt->error;
         }

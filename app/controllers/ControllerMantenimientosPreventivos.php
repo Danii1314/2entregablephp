@@ -22,14 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->fetch()) {
         $stmt->close();
 
-        // Insertar el mantenimiento
-        $stmt = $conn->prepare("INSERT INTO mantenimientos (id_vehiculo, fecha, tipo, costo, Placa_Vehiculo) VALUES (?, ?, ?, ?, ?)");
+        // Insertar el mantenimiento sin incluir Placa_Vehiculo porque no existe en la tabla
+        $stmt = $conn->prepare("INSERT INTO mantenimientos (id_vehiculo, fecha, tipo, costo) VALUES (?, ?, ?, ?)");
         if (!$stmt) {
             $_SESSION['error_mantenimiento'] = "Error en la consulta de inserción de mantenimiento: " . $conn->error;
-             header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
+            header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
             exit;
         }
-        $stmt->bind_param("issds", $id_vehiculo, $fecha, $tipo, $costo, $placa);
+        $stmt->bind_param("issd", $id_vehiculo, $fecha, $tipo, $costo);
 
         if ($stmt->execute()) {
             $_SESSION['mensaje_mantenimiento'] = "Mantenimiento registrado correctamente.";
