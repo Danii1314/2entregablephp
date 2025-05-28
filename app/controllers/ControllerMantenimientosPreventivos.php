@@ -1,5 +1,4 @@
 <?php
-<?php
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/Visualestudio/2entregablephp/data/database.php');
 session_start();
@@ -14,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare("SELECT id_vehiculo FROM vehiculos WHERE placa = ?");
     if (!$stmt) {
         $_SESSION['error_mantenimiento'] = "Error en la consulta de búsqueda de vehículo: " . $conn->error;
-        header("Location: /Visualestudio/2entregablephp/assets/php/ApartadoAsistente/MantenimientoPreventivo.php");
+        header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
         exit;
     }
     $stmt->bind_param("s", $placa);
@@ -27,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $conn->prepare("INSERT INTO mantenimientos (id_vehiculo, fecha, tipo, costo, Placa_Vehiculo) VALUES (?, ?, ?, ?, ?)");
         if (!$stmt) {
             $_SESSION['error_mantenimiento'] = "Error en la consulta de inserción de mantenimiento: " . $conn->error;
-            header("Location: /Visualestudio/2entregablephp/assets/php/ApartadoAsistente/MantenimientoPreventivo.php");
+             header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
             exit;
         }
         $stmt->bind_param("issds", $id_vehiculo, $fecha, $tipo, $costo, $placa);
@@ -43,9 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
     }
     $conn->close();
-    header("Location: /Visualestudio/2entregablephp/assets/php/ApartadoAsistente/MantenimientoPreventivo.php");
+    header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
     exit;
 } else {
-    header("Location: /Visualestudio/2entregablephp/assets/php/ApartadoAsistente/MantenimientoPreventivo.php");
+    header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo");
     exit;
 }
