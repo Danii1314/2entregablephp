@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,13 +21,35 @@
     <ul class="info-list">
       <li><strong>Bienvenido al apartado de conductor:</strong> <?= htmlspecialchars($nombreCompleto) ?></li>
       <li><strong>Camión:</strong> <?= htmlspecialchars($placa) ?></li>
-      <li><strong>Ruta:</strong> Ruta asignada</li>
+      <li><strong>Ruta(s) asignada(s):</strong>
+        <?php
+          if (!empty($fletes)) {
+              $rutas = [];
+              foreach ($fletes as $flete) {
+                  $rutas[] = htmlspecialchars($flete['origen']) . " → " . htmlspecialchars($flete['destino']);
+              }
+              echo implode(' | ', $rutas);
+          } else {
+              echo "No hay rutas asignadas.";
+          }
+        ?>
+      </li>
       <li><strong>Gasolina:</strong> Gasolina gastada hasta el momento</li>
-      <li><strong>Flete a entregar:</strong> Flete asignado por asistente</li>
+      <li><strong>Flete(s) a entregar:</strong>
+        <?php
+          if (!empty($fletes)) {
+              $ids = [];
+              foreach ($fletes as $flete) {
+                  $ids[] = htmlspecialchars($flete['id_flete']);
+              }
+              echo "ID Flete(s): " . implode(', ', $ids);
+          } else {
+              echo "No hay fletes asignados.";
+          }
+        ?>
+      </li>
     </ul>
   </div>
 
 </body>
 </html>
-
- 

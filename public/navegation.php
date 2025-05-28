@@ -19,6 +19,7 @@ $rutasValidas = [
         'gerente'=> __DIR__.'/../assets/php/ApartadoGerente/Inicio.php',
         'conductor'=> __DIR__.'/../assets/php/ApartadoConductor/Inicio.php',
         'asistente'=> __DIR__.'/../assets/php/ApartadoAsistente/auxiliaresAsitente.php',
+        'registroFlete'=>__DIR__.'/../assets/php/ApartadoAsistente/RegistrosFletes.php',
     ],
 ];
 

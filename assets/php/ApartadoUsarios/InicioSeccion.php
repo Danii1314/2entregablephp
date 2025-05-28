@@ -37,7 +37,7 @@
         <!-- Botón para enviar el formulario -->
         <button type="submit" class="button1">Ingresar</button>
         
-       <a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroTdCargo">
+       
 
               <button type="button" class="button2">Registrarse</button>
         </a>

@@ -8,10 +8,21 @@
 </head>
 <body>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/navbarInscrVehicular.php"; ?>
+<?php
+session_start();
+if (isset($_SESSION['error_vehiculo'])) {
+    echo '<div style="color:red; margin-bottom:1em;">'.$_SESSION['error_vehiculo'].'</div>';
+    unset($_SESSION['error_vehiculo']);
+}
+if (isset($_SESSION['mensaje_vehiculo'])) {
+    echo '<div style="color:green; margin-bottom:1em;">'.$_SESSION['mensaje_vehiculo'].'</div>';
+    unset($_SESSION['mensaje_vehiculo']);
+}
+include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/navbarInscrVehicular.php";
+?>
 
   <div class="form-wrapper">
-    <form class="form" action="procesar_vehiculo.php" method="POST">
+    <form class="form" action="/Visualestudio/2entregablephp/app/controllers/controllerRegistrarVehiculo.php" method="POST">
       <p class="title">Registro de vehículo</p>
       <p class="message">Complete los campos para registrar un nuevo vehículo.</p>
 

@@ -11,7 +11,7 @@
     include __DIR__ . '/../../../templates/components/php/navbarAsistente.php';
   ?>
 <div class="form-wrapper">
-  <form class="form" method="POST" action="procesar_asignacion.php">
+<form class="form" method="POST" action="/Visualestudio/2entregablephp/app/controllers/ControllleAsignarFletes.php">
     <h2 class="title">Asignación de fletes</h2>
 
     <label>Flete por asignar

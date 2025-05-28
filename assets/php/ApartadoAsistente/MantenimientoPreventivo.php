@@ -1,21 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Mantenimientos Preventivos</title>
-<link rel="stylesheet"href="/Visualestudio/2entregablephp/assets/Css/components/navbarAsistente.css">
-<link rel="stylesheet"href="/Visualestudio/2entregablephp/assets/Css/ApartadoAsistente/MantenimientosPreventivos.css">
+    <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/components/navbarAsistente.css">
+    <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/ApartadoAsistente/MantenimientosPreventivos.css">
 </head>
 <body>
 
-  
-</head>
 <?php
-    include __DIR__ . '/../../../templates/components/php/navbarAsistente.php';
-  ?>
+    include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/components/php/navbarAsistente.php';
+?>
 
 <div class="form-wrapper">
-  <form class="form" method="POST" action="procesar_mantenimiento.php">
+  <form class="form" method="POST" action="/Visualestudio/2entregablephp/app/controllers/ControllerMantenimientosPreventivos.php">
     <h2 class="title">Mantenimientos Preventivos</h2>
 
     <label>Placa del vehículo

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +11,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/Visualestudio/2entregablephp/templates/Components/php/Nvar.php'; ?>
   
   <div class="form-wrapper">
-    <form class="form" action="procesar_mantenimiento.php" method="POST">
+    <form class="form" action="/Visualestudio/2entregablephp/app/controllers/ControllerMantenimientosCorrectivos.php" method="POST">
       <p class="title">Registrar</p>
       <p class="message">Ingresa los datos para registrar el mantenimiento.</p>
 
