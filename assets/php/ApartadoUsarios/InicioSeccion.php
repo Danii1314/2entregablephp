@@ -39,7 +39,6 @@
         
        
 
-              <button type="button" class="button2">Registrarse</button>
         </a>
 
       </div>

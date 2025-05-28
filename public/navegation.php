@@ -9,6 +9,8 @@ if (session_status() === PHP_SESSION_NONE) {
 // Configuración de rutas ABSOLUTAS desde el root del proyecto
 $rutasValidas = [
     'usuario' => [
+        
+        // Rutas para el apartado de usuarios
         'inicio' => __DIR__.'/../assets/php/ApartadoUsarios/ApartadoUsuario.php',
         'login' => __DIR__.'/../assets/php/ApartadoUsarios/InicioSeccion.php',
         'registroTdCargo' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroTipoDeUsuario.php',
@@ -16,13 +18,23 @@ $rutasValidas = [
         'registroAuxiliar' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroAuxiliar.php',
         'registroAsistente' => __DIR__.'/../assets/php/ApartadoUsarios/RegistroAsistente.php',
         'registro'=> __DIR__.'/../assets/php/ApartadoUsarios/Registro.php',
+
+        // Rutas para el apartado de gerente
+        'contabilidad' => __DIR__.'/../assets/php/ApartadoGerente/Contabilidad.php',
         'gerente'=> __DIR__.'/../assets/php/ApartadoGerente/Inicio.php',
+
+        // Rutas para el apartado de conductor
         'conductor'=> __DIR__.'/../assets/php/ApartadoConductor/Inicio.php',
-        'asistente'=> __DIR__.'/../assets/php/ApartadoAsistente/auxiliaresAsitente.php',
-        'registroFlete'=>__DIR__.'/../assets/php/ApartadoAsistente/RegistrosFletes.php',
         'mantenimientoCorrectivo'=> __DIR__.'/../assets/php/ApartadoConductor/mantenimientosCorrectivos.php',
+        'registrarRodamiento' => __DIR__.'/../assets/php/ApartadoConductor/Rodamientos.php',
+
+        // Rutas para el apartado de asistente
+        'asistente'=> __DIR__.'/../assets/php/ApartadoAsistente/auxiliaresAsistente.php',
+        'registroFlete'=>__DIR__.'/../assets/php/ApartadoAsistente/RegistrosFletes.php',
+        'asignacionFletes'=>__DIR__.'/../assets/php/ApartadoAsistente/asignacionFletes.php',
         'MantenimientoPreventivo'=> __DIR__.'/../assets/php/ApartadoAsistente/MantenimientoPreventivo.php',
-        'registrarRodamiento' => __DIR__.'/../assets/php/ApartadoConductor/Rodamientos.php'
+        'inscripcionVehiculo' => __DIR__.'/../assets/php/ApartadoAsistente/inscripcionVehicular.php',
+       
     ],
 ];
 

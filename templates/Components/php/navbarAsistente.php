@@ -14,16 +14,16 @@
 
   <nav>
     <ul>
-      <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoAsistente/auxiliaresAsistente.php">Inicio</a></li>
-      <li><a href="/Visualestudio/2entregablephp/templates/Components/php/inscripcionVehicular.php">Registrar vehículos</a></li>
-      <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoAsistente/MantenimientoPreventivo.php">Mantenimientos<br>preventivos</a></li>
-      <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoAsistente/RegistrosFletes.php">Registro fletes</a></li>
-      <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoAsistente/asignacionFletes.php">Asignación de fletes</a></li>
-      <li class="logout">
-        <a href="/Visualestudio/2entregablephp/assets/php/ApartadoUsuario/ApartadoUsuario.php" title="Cerrar sesión">
-        <img src="../../Images/IconoCerrarSecion.jpg" alt="Cerrar sesión" style="height: 35px; padding-left: 0%; padding-right: 35px;">
-        </a>
-      </li>
+      <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/asistente">Inicio</a></li>
+      <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/inscripcionVehiculo">Registrar vehículos</a></li>
+      <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/MantenimientoPreventivo">Mantenimientos<br>preventivos</a></li>
+      <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroFlete">Registro fletes</a></li>
+      <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/asignacionFletes">Asignación de fletes</a></li>
+       <li>
+          <a href="/Visualestudio/2entregablephp/assets/php/ApartadoUsarios/ApartadoUsuario.php">
+            <img src="/Visualestudio/2entregablephp/assets/Images/IconoCerrarSecion.jpg" alt="Cerrar sesión" style="height: 35px; padding-left: 0%; padding-right: 35px;">
+          </a>
+        </li>
     </ul>
   </nav>
 </header>

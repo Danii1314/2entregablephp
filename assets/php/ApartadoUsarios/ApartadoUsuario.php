@@ -36,7 +36,7 @@
       
       <div class="recuadros-derecha">
         <div class="info-box">
-          <strong>Te cotizamos en segundos</strong>
+          <strong>Eres Administrador?</strong>
           <a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/login" class="boton-naranja">INICIA ONLINE</a>
         </div>
             

@@ -2,14 +2,16 @@
 
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/Visualestudio/2entregablephp/data/database.php');
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $tipo_vehiculo = isset($_POST['tipo_vehiculo']) ? trim($_POST['tipo_vehiculo']) : '';
     $placa = isset($_POST['placa_vehiculo']) ? strtoupper(trim($_POST['placa_vehiculo'])) : '';
 
     // Ruta absoluta al formulario
-    $form_url = "/Visualestudio/2entregablephp/templates/Components/php/inscripcionVehicular.php";
+    $form_url = "/Visualestudio/2entregablephp/public/index.php?ruta=usuario/inscripcionVehiculo";
 
     // Validar campos obligatorios
     if (empty($tipo_vehiculo) || empty($placa)) {

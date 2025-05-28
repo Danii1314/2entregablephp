@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro de Vehículo</title>
+ <link rel="stylesheet" href="/Visualestudio/2entregablephp/assets/Css/components/navbarAsistente.css">
   <link rel="stylesheet" href="/Visualestudio/2entregablephp/templates/Components/css/inscripcionVehicular.css">
 </head>
 <body>
 
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 if (isset($_SESSION['error_vehiculo'])) {
     echo '<div style="color:red; margin-bottom:1em;">'.$_SESSION['error_vehiculo'].'</div>';
     unset($_SESSION['error_vehiculo']);
@@ -18,7 +21,7 @@ if (isset($_SESSION['mensaje_vehiculo'])) {
     echo '<div style="color:green; margin-bottom:1em;">'.$_SESSION['mensaje_vehiculo'].'</div>';
     unset($_SESSION['mensaje_vehiculo']);
 }
-include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/navbarInscrVehicular.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/Visualestudio/2entregablephp/templates/Components/php/navbarAsistente.php";
 ?>
 
   <div class="form-wrapper">

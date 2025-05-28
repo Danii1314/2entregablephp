@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $conn->close();
         switch ($id_cargo) {
             case 1: // Gerente
-                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroGerente&id_usuario=$id_usuario");
+                header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/login");
                 break;
             case 2: // Asistente
                 header("Location: /Visualestudio/2entregablephp/public/index.php?ruta=usuario/registroAsistente&id_usuario=$id_usuario");

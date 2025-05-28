@@ -14,8 +14,8 @@
     <nav>
       <ul>
         <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/conductor">Inicio</a></li>
-        <li><a href="/Visualestudio/2entregablephp/assets/php/ApartadoConductor/mantenimientosCorrectivos.php">Mantenimientos correctivos</a></li>
-        <li><a href="rodamientos.php">Rodamientos</a></li>
+        <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/mantenimientoCorrectivo">Mantenimientos correctivos</a></li>
+        <li><a href="/Visualestudio/2entregablephp/public/index.php?ruta=usuario/registrarRodamiento ">Rodamientos</a></li>
         <li>
           <a href="/Visualestudio/2entregablephp/assets/php/ApartadoUsarios/ApartadoUsuario.php">
             <img src="/Visualestudio/2entregablephp/assets/Images/IconoCerrarSecion.jpg" alt="Cerrar sesión" style="height: 35px; padding-left: 0%; padding-right: 35px;">
